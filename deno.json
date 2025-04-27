@@ -1,0 +1,21 @@
+{
+  "tasks": {
+    "dev": "deno run -A --node-modules-dir npm:vite",
+    "build": "deno run -A --node-modules-dir npm:vite build",
+    "preview": "deno run -A --node-modules-dir npm:vite preview",
+    "serve": "deno run --allow-net --allow-read jsr:@std/http@1/file-server dist/"
+  },
+  "nodeModulesDir": "auto",
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"]
+  },
+  "imports": {
+    "@deno/vite-plugin": "npm:@deno/vite-plugin@^1.0.4",
+    "@tailwindcss/postcss": "npm:@tailwindcss/postcss@^4.1.4",
+    "elm": "npm:elm@^0.19.1-6",
+    "postcss": "npm:postcss@^8.5.3",
+    "tailwindcss": "npm:tailwindcss@^4.1.4",
+    "vite": "npm:vite@^6.1.1",
+    "vite-plugin-elm": "npm:vite-plugin-elm@^3.0.1"
+  }
+}
